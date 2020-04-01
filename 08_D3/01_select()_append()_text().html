@@ -1,0 +1,40 @@
+<!-- Introduction to the Data Visualization with D3
+
+D3.js, or D3, stands for Data Driven Documents. D3 is a JavaScript library to create dynamic and interactive data visualizations in the browser. It's built to work with common web standards, namely HTML, CSS, and Scalable Vector Graphics (SVG).
+
+D3 takes input data and maps it into a visual representation of that data. It supports many different data formats. D3 lets you bind (or attach) the data to the Document Object Model (DOM). You use HTML or SVG elements with D3's built-in methods to transform the data into a visualization.
+
+D3 gives you a lot of control over the presentation of data. This section covers the basic functionality and how to create visualizations with the D3 library.
+
+Add Document Elements with D3
+
+D3 has several methods that let you add and change elements in your document.
+
+The select() method selects one element from the document. It takes an argument for the name of the element you want and returns an HTML node for the first element in the document that matches the name. Here's an example:
+
+const anchor = d3.select("a");
+
+The above example finds the first anchor tag on the page and saves an HTML node for it in the variable anchor. You can use the selection with other methods. The "d3" part of the example is a reference to the D3 object, which is how you access D3 methods.
+
+Two other useful methods are append() and text().
+
+The append() method takes an argument for the element you want to add to the document. It appends an HTML node to a selected item, and returns a handle to that node.
+
+The text() method either sets the text of the selected node, or gets the current text. To set the value, you pass a string as an argument inside the parentheses of the method.
+
+Here's an example that selects an unordered list, appends a list item, and adds text:
+
+d3.select("ul")
+  .append("li")
+  .text("Very important item");
+D3 allows you to chain several methods together with periods to perform a number of actions in a row. -->
+
+<body>
+  <script>
+    d3.select("body")
+      .append("h1")
+      .text("Learning D3")
+  </script>
+</body>
+
+Learning D3
