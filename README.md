@@ -1,4 +1,4 @@
-# 備忘録
+# JavaScript備忘録
 2018/3〜
 
 # 課題
@@ -6,6 +6,4 @@
 - [ ] Node.js
 - [ ] Puppeteer
 - [ ] Dart
-- [ ] Go
-- [ ] Rust
 - [ ] Deno
