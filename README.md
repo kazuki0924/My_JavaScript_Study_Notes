@@ -7,3 +7,6 @@
 - [ ] Node.js
 - [ ] Puppeteer
 - [ ] Deno
+
+# 利用方法
+node [ファイル名]
